@@ -1,0 +1,125 @@
+																																												*,
+*::before,
+*::after {
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+	background-image: url(../img/top1.jpg);
+	background-size: cover;
+	/* ↓画像を常に天地左右の中央に配置 */
+	background-position: center center;
+	/* ↓コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+	background-attachment: fixed;
+	background-color: white;
+	width: 100vw;
+	height: 100vh;
+	font-family: "Century Gothic";
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+/*----------header----------*/
+
+header {
+	background-color: white;
+	opacity: 0.5;
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	box-shadow: 0px -3px 11px 0px;
+}
+
+/*headerの左上タイトルロゴ*/
+
+.header-logo {
+	float: left;
+	padding: 15px 40px;
+	width: 25%;
+	
+}
+
+.header-logo h1{
+	font-size: 40px; 
+	color: #3c3c3c;
+}
+
+.header-logo h2 {
+	font-size: 13px;
+	color: #3c3c3c;
+	margin: -5px 5px;
+}
+
+/*headerのメニューバー*/
+
+.header-list{
+	padding: 40px;
+}
+
+ul{
+	float: right;
+}
+
+li {
+	list-style: none;
+	float: left;
+	padding: 0px 30px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+li:hover {
+	background-color: wihte;
+}
+
+a {
+	text-decoration: none; 
+}
+
+
+/*infometion*/
+
+
+.infomation-continer{
+	position: relative;
+	height: 230px;
+}
+
+.infotitle {
+	position: absolute;
+	top: 800px;
+	right: 0;
+	bottom: 0;
+	left: 800px;
+	margin: auto;
+	width: 35%;
+	height: 75%;
+	background-color: white;
+	opacity: 0.5;
+	border-radius: 30px;
+	box-shadow: 3px 3px 10px 0px;
+}
+
+.infotitle h1{
+	font-size: 18px;
+	margin: 10px 20px;
+}
+
+.infobox {
+	font-size: 13px;
+	height: 100px;
+	/*↓スクロール画面設定*/
+	overflow: auto; 
+	margin: 20px;
+}
+
+
+
