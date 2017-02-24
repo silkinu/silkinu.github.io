@@ -7,7 +7,7 @@
 }
 
 .main{
-	background-image: url(img/top1.jpg);
+	background-image: url(../seki/img/top1.jpg);
 	background-size: cover;
 	/* ↓画像を常に天地左右の中央に配置 */
 	background-position: center center;
